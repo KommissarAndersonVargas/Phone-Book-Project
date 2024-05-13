@@ -8,3 +8,6 @@ C:\Users\Usuario\source\repos\Phone_Book_Project\Phone_Book_Project\obj\Debug\Ph
 C:\Users\Usuario\source\repos\Phone_Book_Project\Phone_Book_Project\obj\Debug\Phone_Book_Project.exe
 C:\Users\Usuario\source\repos\Phone_Book_Project\Phone_Book_Project\obj\Debug\Phone_Book_Project.pdb
 C:\Users\Usuario\source\repos\Phone_Book_Project\Phone_Book_Project\obj\Debug\Phone_Book_Project.Form1.resources
+C:\Users\Usuario\source\repos\Phone_Book_Project\Phone_Book_Project\obj\Debug\Phone_Book_Project.Registration_data.resources
+C:\Users\Usuario\source\repos\Phone_Book_Project\Phone_Book_Project\obj\Debug\Phone_Book_Project.About_Us.resources
+C:\Users\Usuario\source\repos\Phone_Book_Project\Phone_Book_Project\obj\Debug\Phone_Book_Project.Search_Form.resources
