@@ -12,9 +12,17 @@ namespace Phone_Book_Project
 {
     public partial class Search_Form : Form
     {
+        public BindingList<PersonInformation> personinformation { get; set; }
         public Search_Form()
         {
             InitializeComponent();
+            
         }
+
+        private void Search_Form_Load(object sender, EventArgs e)
+        {
+            label1.Text = personinformation.Count().ToString();
+        }
+        
     }
 }

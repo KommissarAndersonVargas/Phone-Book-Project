@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|c:\\users\\usuario\\source\\repos\\phone_book_project\\phone_book_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|c:\\users\\usuario\\source\\repos\\phone_book_project\\phone_book_project\\search_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\search_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\phone_book_project\\about_us.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\about_us.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|c:\\users\\usuario\\source\\repos\\phone_book_project\\phone_book_project\\registration_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\registration_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\phone_book_project\\registration_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\registration_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\phone_book_project\\search_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\search_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\phone_book_project\\registration_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\registration_data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\phone_book_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|c:\\users\\usuario\\source\\repos\\phone_book_project\\phone_book_project\\search_form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\search_form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|c:\\users\\usuario\\source\\repos\\phone_book_project\\phone_book_project\\classes\\personinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\classes\\personinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\phone_book_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|c:\\users\\usuario\\source\\repos\\phone_book_project\\phone_book_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\phone_book_project\\about_us.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22AFF6FB-6123-4434-A177-F763C90428AC}|Phone_Book_Project\\Phone_Book_Project.csproj|solutionrelative:phone_book_project\\about_us.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,44 +50,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "About_Us.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\About_Us.cs",
-              "RelativeDocumentMoniker": "Phone_Book_Project\\About_Us.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\About_Us.cs [Design]",
-              "RelativeToolTip": "Phone_Book_Project\\About_Us.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "Search_Form.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.Designer.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Search_Form.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.Designer.cs",
+              "RelativeToolTip": "Phone_Book_Project\\Search_Form.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T23:17:18.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Search_Form.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.cs",
-              "RelativeDocumentMoniker": "Phone_Book_Project\\Search_Form.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.cs [Design]",
-              "RelativeToolTip": "Phone_Book_Project\\Search_Form.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T23:15:11.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Registration_data.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Registration_data.cs",
-              "RelativeDocumentMoniker": "Phone_Book_Project\\Registration_data.cs",
-              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Registration_data.cs [Design]",
-              "RelativeToolTip": "Phone_Book_Project\\Registration_data.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T23:09:14.37Z"
+              "WhenOpened": "2024-05-15T20:58:28.133Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Search_Form.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Search_Form.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.cs",
+              "RelativeToolTip": "Phone_Book_Project\\Search_Form.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA4AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T20:34:25.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Program.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Program.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Program.cs",
+              "RelativeToolTip": "Phone_Book_Project\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T19:51:07.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonInformation.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Classes\\PersonInformation.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Classes\\PersonInformation.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Classes\\PersonInformation.cs",
+              "RelativeToolTip": "Phone_Book_Project\\Classes\\PersonInformation.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wBkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T19:49:07.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registration_data.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Registration_data.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Registration_data.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Registration_data.cs",
+              "RelativeToolTip": "Phone_Book_Project\\Registration_data.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAIwEMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T18:53:05.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Form1.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Form1.cs",
+              "RelativeToolTip": "Phone_Book_Project\\Form1.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwBwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:44:43.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Form1.cs",
               "RelativeDocumentMoniker": "Phone_Book_Project\\Form1.cs",
@@ -71,6 +140,42 @@
               "RelativeToolTip": "Phone_Book_Project\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T19:57:57.602Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registration_data.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Registration_data.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Registration_data.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Registration_data.cs [Design]",
+              "RelativeToolTip": "Phone_Book_Project\\Registration_data.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:09:14.37Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Search_Form.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\Search_Form.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\Search_Form.cs [Design]",
+              "RelativeToolTip": "Phone_Book_Project\\Search_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:15:11.796Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "About_Us.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\About_Us.cs",
+              "RelativeDocumentMoniker": "Phone_Book_Project\\About_Us.cs",
+              "ToolTip": "C:\\Users\\Usuario\\source\\repos\\Phone_Book_Project\\Phone_Book_Project\\About_Us.cs [Design]",
+              "RelativeToolTip": "Phone_Book_Project\\About_Us.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:17:18.075Z",
               "EditorCaption": " [Design]"
             }
           ]
