@@ -12,6 +12,7 @@ namespace Phone_Book_Project
 {
     public partial class Form1 : Form
     {
+        public BindingList<PersonInformation> personinformation { get; set; }
         public Form1()
         {
             InitializeComponent();

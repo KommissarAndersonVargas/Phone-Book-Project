@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Phone_Book_Project
 {
@@ -30,20 +32,22 @@ namespace Phone_Book_Project
             PersonInformation person = new PersonInformation(cpf, firstName, lastName, cellNumber, email, address, time_of_register);
             personInformation.Add(person);
 
-            InitializeSearchFormWithData();
+          
             ResetTextOfBoxes();
 
         }
 
         private void SavaBotton_Click(object sender, EventArgs e)
         {
+            XmlSerializer serializer = new XmlSerializer(typeof(BindingList<PersonInformation>));
+            using (TextWriter writer = new StreamWriter(@"C:\Users\Usuario\OneDrive\Documentos\Images\ArquivoProjeto.xml"))
+            {
+                serializer.Serialize(writer, personInformation);
+            }
 
-        }
+            MessageBox.Show("Gerado com sucesso");
 
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
+            this.Close();
         }
 
         private void Registration_data_Load(object sender, EventArgs e)
@@ -59,17 +63,6 @@ namespace Phone_Book_Project
             this.EmailtextBox5.ResetText();
             this.AddressTextBox6.ResetText();
         }
-        public void InitializeSearchFormWithData()
-        {
-            Search_Form search = new Search_Form
-            {
-                personinformation = personInformation
-            };
-            if (personInformation.Count() == 1)
-            {
-                search.Show();
-            }
-
-        }
+        
     }
 }
