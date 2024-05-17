@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,25 +16,34 @@ namespace Phone_Book_Project
 {
     public partial class Search_Form : Form
     {
-        public BindingList<PersonInformation> personinformation = new BindingList<PersonInformation>(); 
+        public BindingList<PersonInformation> personinformation = new BindingList<PersonInformation>();
         public Search_Form()
         {
             InitializeComponent();
-            
+
         }
 
         private void Search_Form_Load(object sender, EventArgs e)
         {
-            personinformation = DesserializarXmlParaBindingList(@"C:\Users\Usuario\OneDrive\Documentos\Images\ArquivoProjeto.xml");
-            dataGridView1.DataSource = personinformation;
-            GenerateCollunsWithName();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "XML Files (*.xml)|*.xml";
+            openFileDialog.DefaultExt = "xml";
+            openFileDialog.AddExtension = true;
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                personinformation = DesserializarXmlParaBindingList(openFileDialog.FileName);
+                dataGridView1.DataSource = personinformation;
+                 GenerateCollunsWithName();
+            }
+
         }
         public static BindingList<PersonInformation> DesserializarXmlParaBindingList(string caminhoArquivo)
         {
             var serializer = new XmlSerializer(typeof(BindingList<PersonInformation>));
-            using (var stream = new FileStream(caminhoArquivo, FileMode.Open))
+            using (TextReader reader = new StreamReader(caminhoArquivo))
             {
-                return (BindingList<PersonInformation>)serializer.Deserialize(stream);
+                return (BindingList<PersonInformation>)serializer.Deserialize(reader);
             }
         }
 
@@ -45,13 +56,9 @@ namespace Phone_Book_Project
                 {
                     coluna.HeaderText = "CPF";
                 }
-                else if (coluna.DataPropertyName == "firstName")
+                else if (coluna.DataPropertyName == "fullName")
                 {
-                    coluna.HeaderText = "First Name";
-                }
-                else if (coluna.DataPropertyName == "lastName")
-                {
-                    coluna.HeaderText = "Last Name";
+                    coluna.HeaderText = "Full name";
                 }
                 else if (coluna.DataPropertyName == "cellPhoneNumber")
                 {
@@ -83,7 +90,6 @@ namespace Phone_Book_Project
             saveFileDialog.AddExtension = true;
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-
                 SalvaData(saveFileDialog.FileName);
             }
         }
@@ -94,8 +100,123 @@ namespace Phone_Book_Project
             {
                 serializer.Serialize(writer, personinformation);
             }
+        }
 
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            SalvarBindingListEmExcel(personinformation);
+        }
+        public void SalvarBindingListEmExcel(BindingList<PersonInformation> pessoas)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Excel Files (*.xlsx)|*.xlsx";
+            saveFileDialog.DefaultExt = "xlsx";
+            saveFileDialog.AddExtension = true;
 
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                using (var workbook = new XLWorkbook())
+                {
+                    var worksheet = workbook.Worksheets.Add("Planilha1");
+                    worksheet.Cell(1, 1).Value = "Cpf";
+                    worksheet.Cell(1, 2).Value = "Nome completo";
+                    worksheet.Cell(1, 3).Value = "Numero de telefone";
+                    worksheet.Cell(1, 4).Value = "E-mail";
+                    worksheet.Cell(1, 5).Value = "Enderço curto";
+                    worksheet.Cell(1, 6).Value = "Horário de entrada";
+
+                    int rowStart = 2;
+                    foreach (var pessoa in pessoas)
+                    {
+                        worksheet.Cell(rowStart, 1).Value = pessoa.cpf;
+                        worksheet.Cell(rowStart, 2).Value = pessoa.fullName;
+                        worksheet.Cell(rowStart, 3).Value = pessoa.cellPhoneNumber;
+                        worksheet.Cell(rowStart, 4).Value = pessoa.email;
+                        worksheet.Cell(rowStart, 5).Value = pessoa.address;
+                        worksheet.Cell(rowStart, 6).Value = pessoa.Hora_da_entrada;
+                        rowStart++;
+                    }
+
+                    workbook.SaveAs(saveFileDialog.FileName);
+                }
+                if(saveFileDialog!= null)
+                {
+                    MessageBox.Show("Arquivo Excel gerado com sucesso");
+                }
+                else
+                {
+                    MessageBox.Show("Erro: O arquivo Excel não foi gerado");
+                }
+            }
+        }
+
+        private void RemoveBotton_Click(object sender, EventArgs e)
+        {
+            RemoveSelectedItem();
+        }
+        private void RemoveSelectedItem()
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                // Obtenha o índice da linha selecionada
+                int selectedIndex = dataGridView1.SelectedRows[0].Index;
+
+                // Remova o item da lista com base no índice
+                if (selectedIndex >= 0 && selectedIndex < personinformation.Count)
+                {
+                    personinformation.RemoveAt(selectedIndex);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um item para remover.");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            ProcurarESelecionarPessoaByCpf(procura_texto.Text.ToString());
+        }
+        public void ProcurarESelecionarPessoaByCpf(string cpf)
+        {
+            // Procura a pessoa pelo nome na lista de pessoas
+            var employer = personinformation.FirstOrDefault(p => p.cpf == cpf);
+
+            if (employer != null)
+            {
+                // Encontra o índice da pessoa na lista
+                int index = personinformation.IndexOf(employer);
+
+                // Seleciona a linha correspondente no DataGridView
+                dataGridView1.Rows[index].Selected = true;
+
+                dataGridView1.FirstDisplayedScrollingRowIndex = index;
+            }
+            else
+            {
+                MessageBox.Show("Pessoa não encontrada");
+            }
+        }
+        public void ProcurarESelecionarPessoaByName(string name)
+        {
+            // Procura a pessoa pelo nome na lista de pessoas
+            var employer = personinformation.FirstOrDefault(p => p.fullName == name);
+
+            if (employer != null)
+            {
+                // Encontra o índice da pessoa na lista
+                int index = personinformation.IndexOf(employer);
+
+                // Seleciona a linha correspondente no DataGridView
+                dataGridView1.Rows[index].Selected = true;
+
+                dataGridView1.FirstDisplayedScrollingRowIndex = index;
+            }
+            else
+            {
+                MessageBox.Show("Pessoa não encontrada");
+            }
         }
     }
 }

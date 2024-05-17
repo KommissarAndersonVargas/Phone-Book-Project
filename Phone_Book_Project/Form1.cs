@@ -47,8 +47,15 @@ namespace Phone_Book_Project
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            
-            this.Close();
+            DialogResult dialogResult = MessageBox.Show("Deseja fechar o formulário? Informações não salvas serão perdidas.", "Confirmação", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                // Não faz nada
+            }
             
         }
     }

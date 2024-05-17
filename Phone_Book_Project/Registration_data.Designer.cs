@@ -42,10 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.CNtextBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.LNtextBox3 = new System.Windows.Forms.TextBox();
             this.FNtextBox2 = new System.Windows.Forms.TextBox();
             this.IDtextBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
@@ -66,7 +64,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(467, 54);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            
             // 
             // toolStripSeparator2
             // 
@@ -113,10 +110,8 @@
             this.info_gbox.Controls.Add(this.label5);
             this.info_gbox.Controls.Add(this.CNtextBox4);
             this.info_gbox.Controls.Add(this.label4);
-            this.info_gbox.Controls.Add(this.LNtextBox3);
             this.info_gbox.Controls.Add(this.FNtextBox2);
             this.info_gbox.Controls.Add(this.IDtextBox1);
-            this.info_gbox.Controls.Add(this.label3);
             this.info_gbox.Controls.Add(this.label2);
             this.info_gbox.Controls.Add(this.label1);
             this.info_gbox.Enabled = false;
@@ -129,7 +124,7 @@
             // 
             // AddressTextBox6
             // 
-            this.AddressTextBox6.Location = new System.Drawing.Point(87, 328);
+            this.AddressTextBox6.Location = new System.Drawing.Point(87, 268);
             this.AddressTextBox6.Name = "AddressTextBox6";
             this.AddressTextBox6.Size = new System.Drawing.Size(217, 20);
             this.AddressTextBox6.TabIndex = 11;
@@ -137,7 +132,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 331);
+            this.label6.Location = new System.Drawing.Point(21, 271);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 10;
@@ -145,7 +140,7 @@
             // 
             // EmailtextBox5
             // 
-            this.EmailtextBox5.Location = new System.Drawing.Point(87, 276);
+            this.EmailtextBox5.Location = new System.Drawing.Point(87, 216);
             this.EmailtextBox5.Name = "EmailtextBox5";
             this.EmailtextBox5.Size = new System.Drawing.Size(217, 20);
             this.EmailtextBox5.TabIndex = 9;
@@ -153,7 +148,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 276);
+            this.label5.Location = new System.Drawing.Point(21, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 8;
@@ -161,7 +156,7 @@
             // 
             // CNtextBox4
             // 
-            this.CNtextBox4.Location = new System.Drawing.Point(87, 210);
+            this.CNtextBox4.Location = new System.Drawing.Point(87, 150);
             this.CNtextBox4.Name = "CNtextBox4";
             this.CNtextBox4.Size = new System.Drawing.Size(217, 20);
             this.CNtextBox4.TabIndex = 7;
@@ -169,18 +164,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 213);
+            this.label4.Location = new System.Drawing.Point(21, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Cell number";
-            // 
-            // LNtextBox3
-            // 
-            this.LNtextBox3.Location = new System.Drawing.Point(87, 155);
-            this.LNtextBox3.Name = "LNtextBox3";
-            this.LNtextBox3.Size = new System.Drawing.Size(217, 20);
-            this.LNtextBox3.TabIndex = 5;
             // 
             // FNtextBox2
             // 
@@ -195,15 +183,6 @@
             this.IDtextBox1.Name = "IDtextBox1";
             this.IDtextBox1.Size = new System.Drawing.Size(217, 20);
             this.IDtextBox1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 155);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Last Name";
             // 
             // label2
             // 
@@ -257,10 +236,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox CNtextBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox LNtextBox3;
         private System.Windows.Forms.TextBox FNtextBox2;
         private System.Windows.Forms.TextBox IDtextBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox AddressTextBox6;
