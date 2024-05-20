@@ -15,6 +15,7 @@ namespace Phone_Book_Project
     public partial class Registration_data : Form
     {
         BindingList<PersonInformation> personInformation = new BindingList<PersonInformation>();
+        
         public Registration_data()
         {
             InitializeComponent();
@@ -30,8 +31,6 @@ namespace Phone_Book_Project
             DateTime time_of_register = DateTime.Now;
             PersonInformation person = new PersonInformation(cpf, fullName, cellNumber, email, address, time_of_register);
             personInformation.Add(person);
-
-          
             ResetTextOfBoxes();
 
         }
@@ -44,7 +43,14 @@ namespace Phone_Book_Project
             saveFileDialog.AddExtension = true;
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                SalvarData(saveFileDialog.FileName);
+                if (personInformation != null)
+                {
+                    SalvarData(saveFileDialog.FileName);
+                }
+                else
+                {
+                    MessageBox.Show("Voce não pode salvar um arquivo vazio");
+                }
             }
         }
         public void SalvarData(string path)
@@ -57,7 +63,6 @@ namespace Phone_Book_Project
 
             MessageBox.Show("Gerado com sucesso");
 
-            this.Close();
         }
 
         private void Registration_data_Load(object sender, EventArgs e)
@@ -72,6 +77,36 @@ namespace Phone_Book_Project
             this.EmailtextBox5.ResetText();
             this.AddressTextBox6.ResetText();
         }
-        
+
+        private void open_file_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "XML Files (*.xml)|*.xml";
+            openFileDialog.DefaultExt = "xml";
+            openFileDialog.AddExtension = true;
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                var copyinfolist = personInformation;
+                personInformation = DesserializarXmlParaBindingList(openFileDialog.FileName);
+                
+                if(personInformation != null && !copyinfolist.Equals(personInformation)) 
+                {
+                    MessageBox.Show("Arquivo carregado com sucesso");
+                }
+                else
+                {
+                    MessageBox.Show("Arquivo NÃO carregado");
+                }
+            }
+        }
+        public static BindingList<PersonInformation> DesserializarXmlParaBindingList(string caminhoArquivo)
+        {
+            var serializer = new XmlSerializer(typeof(BindingList<PersonInformation>));
+            using (TextReader reader = new StreamReader(caminhoArquivo))
+            {
+                return (BindingList<PersonInformation>)serializer.Deserialize(reader);
+            }
+        }
     }
 }

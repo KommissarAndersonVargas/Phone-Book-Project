@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_Form));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.selecao_de_procura = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.procura_texto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,8 +41,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.selcao_de_ordenamento = new System.Windows.Forms.ToolStripComboBox();
+            this.FilterBotton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.selecao_de_procura = new System.Windows.Forms.ComboBox();
+            this.showingTheSize = new System.Windows.Forms.ToolStripLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -70,6 +74,18 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Controller and Searcher Data";
+            // 
+            // selecao_de_procura
+            // 
+            this.selecao_de_procura.FormattingEnabled = true;
+            this.selecao_de_procura.Items.AddRange(new object[] {
+            "Nome",
+            "CPF"});
+            this.selecao_de_procura.Location = new System.Drawing.Point(128, 339);
+            this.selecao_de_procura.Name = "selecao_de_procura";
+            this.selecao_de_procura.Size = new System.Drawing.Size(226, 25);
+            this.selecao_de_procura.TabIndex = 6;
+            this.selecao_de_procura.Text = "Select the search";
             // 
             // button1
             // 
@@ -117,7 +133,11 @@
             this.toolStripButton1,
             this.toolStripSeparator1,
             this.toolStripButton2,
-            this.toolStripSeparator2});
+            this.toolStripSeparator2,
+            this.selcao_de_ordenamento,
+            this.FilterBotton,
+            this.toolStripSeparator3,
+            this.showingTheSize});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(721, 50);
@@ -157,21 +177,37 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 50);
             // 
+            // selcao_de_ordenamento
+            // 
+            this.selcao_de_ordenamento.Name = "selcao_de_ordenamento";
+            this.selcao_de_ordenamento.Size = new System.Drawing.Size(121, 50);
+            // 
+            // FilterBotton
+            // 
+            this.FilterBotton.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FilterBotton.Image = ((System.Drawing.Image)(resources.GetObject("FilterBotton.Image")));
+            this.FilterBotton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.FilterBotton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.FilterBotton.Name = "FilterBotton";
+            this.FilterBotton.Size = new System.Drawing.Size(101, 47);
+            this.FilterBotton.Text = "Filter ";
+            this.FilterBotton.Click += new System.EventHandler(this.FilterBotton_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 50);
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // selecao_de_procura
+            // showingTheSize
             // 
-            this.selecao_de_procura.FormattingEnabled = true;
-            this.selecao_de_procura.Items.AddRange(new object[] {
-            "Nome",
-            "CPF"});
-            this.selecao_de_procura.Location = new System.Drawing.Point(128, 339);
-            this.selecao_de_procura.Name = "selecao_de_procura";
-            this.selecao_de_procura.Size = new System.Drawing.Size(226, 25);
-            this.selecao_de_procura.TabIndex = 6;
-            this.selecao_de_procura.Text = "Select the search";
+            this.showingTheSize.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showingTheSize.Name = "showingTheSize";
+            this.showingTheSize.Size = new System.Drawing.Size(40, 47);
+            this.showingTheSize.Text = "Size:";
             // 
             // Search_Form
             // 
@@ -181,6 +217,7 @@
             this.ClientSize = new System.Drawing.Size(721, 506);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Search_Form";
@@ -210,5 +247,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox procura_texto;
         private System.Windows.Forms.ComboBox selecao_de_procura;
+        private System.Windows.Forms.ToolStripComboBox selcao_de_ordenamento;
+        private System.Windows.Forms.ToolStripButton FilterBotton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripLabel showingTheSize;
     }
 }

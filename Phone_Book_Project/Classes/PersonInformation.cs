@@ -27,23 +27,23 @@ public class PersonInformation
         Hora_da_entrada = hora_da_entrada;
     }
 
-    public IEnumerable<PersonInformation> GetOrderByLastName(BindingList<PersonInformation> infoList)
+    public static IEnumerable<PersonInformation> GetOrderByName(BindingList<PersonInformation> infoList)
     {
 
-        var resultByLastName = infoList.OrderBy(x => x.fullName);
-        return resultByLastName;
+        var resultByFullName = infoList.OrderBy(x => x.fullName);
+        return resultByFullName;
     }
-    public IEnumerable<PersonInformation> GetOrderByAddress(BindingList<PersonInformation> infoList)
+    public static IEnumerable<PersonInformation> GetOrderByAddress(BindingList<PersonInformation> infoList)
     {
 
-        var resultByLastName = infoList.OrderBy(x => x.address);
-        return resultByLastName;
+        var resultByLastAddres = infoList.OrderBy(x => x.address);
+        return resultByLastAddres;
     }
-    public IEnumerable<PersonInformation> GetOrderByCpf(BindingList<PersonInformation> infoList)
+    public static IEnumerable<PersonInformation> GetOrderByCpf(BindingList<PersonInformation> infoList)
     {
 
-        var resultByLastName = infoList.OrderBy(x => x.cpf);
-        return resultByLastName;
+        var resultByCpf = infoList.OrderBy(x => x.cpf);
+        return resultByCpf;
     }
     public PersonInformation() { }
 

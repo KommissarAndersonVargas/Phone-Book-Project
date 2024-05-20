@@ -1,5 +1,7 @@
 ﻿
 using ClosedXML.Excel;
+using DocumentFormat.OpenXml.Drawing.Charts;
+using DocumentFormat.OpenXml.Wordprocessing;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,9 +36,21 @@ namespace Phone_Book_Project
             {
                 personinformation = DesserializarXmlParaBindingList(openFileDialog.FileName);
                 dataGridView1.DataSource = personinformation;
-                 GenerateCollunsWithName();
+                GenerateCollunsWithName();
             }
-
+            InitializeNameOfFilter();
+            InitComboBoxOfDataFilter();
+            showingTheSize.Text = $"Size: {personinformation.Count()}";
+        }
+        public void InitializeNameOfFilter()
+        {
+            selcao_de_ordenamento.Text = "Order by";
+        }
+        public void InitComboBoxOfDataFilter()
+        {
+            selcao_de_ordenamento.Items.Add("Ordenar por CPF");
+            selcao_de_ordenamento.Items.Add("Ordenar por Nome");
+            selcao_de_ordenamento.Items.Add("Ordenar por Endereço");
         }
         public static BindingList<PersonInformation> DesserializarXmlParaBindingList(string caminhoArquivo)
         {
@@ -153,6 +167,7 @@ namespace Phone_Book_Project
         private void RemoveBotton_Click(object sender, EventArgs e)
         {
             RemoveSelectedItem();
+            showingTheSize.Text = $"Size: {personinformation.Count()}";
         }
         private void RemoveSelectedItem()
         {
@@ -176,17 +191,27 @@ namespace Phone_Book_Project
         private void button1_Click(object sender, EventArgs e)
         {
             
-            ProcurarESelecionarPessoaByCpf(procura_texto.Text.ToString());
+            if(selecao_de_procura.Text == "Nome" )
+            {
+                ProcurarESelecionarPessoaByName(procura_texto.Text.ToString());
+            }
+            if (selecao_de_procura.Text == "CPF")
+            {
+                ProcurarESelecionarPessoaByCpf(procura_texto.Text.ToString());
+            }
+            procura_texto.Clear();
+            procura_texto.Focus();
+           
         }
         public void ProcurarESelecionarPessoaByCpf(string cpf)
         {
-            // Procura a pessoa pelo nome na lista de pessoas
-            var employer = personinformation.FirstOrDefault(p => p.cpf == cpf);
+            // Procura a pessoa pelo cpf na lista de pessoas
+            var people = personinformation.FirstOrDefault(p => p.cpf == cpf);
 
-            if (employer != null)
+            if (people != null)
             {
                 // Encontra o índice da pessoa na lista
-                int index = personinformation.IndexOf(employer);
+                int index = personinformation.IndexOf(people);
 
                 // Seleciona a linha correspondente no DataGridView
                 dataGridView1.Rows[index].Selected = true;
@@ -201,12 +226,12 @@ namespace Phone_Book_Project
         public void ProcurarESelecionarPessoaByName(string name)
         {
             // Procura a pessoa pelo nome na lista de pessoas
-            var employer = personinformation.FirstOrDefault(p => p.fullName == name);
+            var people = personinformation.FirstOrDefault(p => p.fullName == name);
 
-            if (employer != null)
+            if (people != null)
             {
                 // Encontra o índice da pessoa na lista
-                int index = personinformation.IndexOf(employer);
+                int index = personinformation.IndexOf(people);
 
                 // Seleciona a linha correspondente no DataGridView
                 dataGridView1.Rows[index].Selected = true;
@@ -217,6 +242,52 @@ namespace Phone_Book_Project
             {
                 MessageBox.Show("Pessoa não encontrada");
             }
+        }
+
+        public void OrderToDataGrid()
+        {
+            if (selcao_de_ordenamento.Text == "Ordenar por CPF")
+            {
+                var newOrnedData = PersonInformation.GetOrderByCpf(personinformation).ToList();
+                personinformation.Clear();
+
+                foreach (var person in newOrnedData)
+                {
+                    personinformation.Add(person);
+                }
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = personinformation;
+            }
+            if (selcao_de_ordenamento.Text == "Ordenar por Endereço")
+            {
+                var newOrnedData = PersonInformation.GetOrderByAddress(personinformation).ToList();
+                personinformation.Clear();
+
+                foreach (var person in newOrnedData)
+                {
+                    personinformation.Add(person);
+                }
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = personinformation;
+            }
+            if (selcao_de_ordenamento.Text == "Ordenar por Nome")
+            {
+                var newOrnedData = PersonInformation.GetOrderByName(personinformation).ToList();
+                personinformation.Clear();
+
+                foreach(var person in newOrnedData)
+                {
+                    personinformation.Add(person);
+                }
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = personinformation;
+            }
+        }
+
+        private void FilterBotton_Click(object sender, EventArgs e)
+        {
+            OrderToDataGrid();
+            GenerateCollunsWithName();
         }
     }
 }
