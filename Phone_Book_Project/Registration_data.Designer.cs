@@ -65,7 +65,7 @@
             this.toolStripSeparator4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(505, 54);
+            this.toolStrip1.Size = new System.Drawing.Size(525, 54);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -81,8 +81,8 @@
             this.newData.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.newData.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newData.Name = "newData";
-            this.newData.Size = new System.Drawing.Size(120, 51);
-            this.newData.Text = "New Data";
+            this.newData.Size = new System.Drawing.Size(119, 51);
+            this.newData.Text = "Adicionar";
             this.newData.Click += new System.EventHandler(this.newData_Click);
             // 
             // toolStripSeparator3
@@ -97,8 +97,8 @@
             this.SavaBotton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.SavaBotton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SavaBotton.Name = "SavaBotton";
-            this.SavaBotton.Size = new System.Drawing.Size(144, 51);
-            this.SavaBotton.Text = "Save Changes";
+            this.SavaBotton.Size = new System.Drawing.Size(101, 51);
+            this.SavaBotton.Text = "Salvar ";
             this.SavaBotton.Click += new System.EventHandler(this.SavaBotton_Click);
             // 
             // toolStripSeparator1
@@ -113,8 +113,8 @@
             this.open_file.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.open_file.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.open_file.Name = "open_file";
-            this.open_file.Size = new System.Drawing.Size(119, 51);
-            this.open_file.Text = "Open File";
+            this.open_file.Size = new System.Drawing.Size(142, 51);
+            this.open_file.Text = "Abrir arquivo";
             this.open_file.Click += new System.EventHandler(this.open_file_Click);
             // 
             // toolStripSeparator4
@@ -135,7 +135,7 @@
             this.info_gbox.Controls.Add(this.label2);
             this.info_gbox.Controls.Add(this.label1);
             this.info_gbox.Enabled = false;
-            this.info_gbox.Location = new System.Drawing.Point(41, 70);
+            this.info_gbox.Location = new System.Drawing.Point(41, 78);
             this.info_gbox.Name = "info_gbox";
             this.info_gbox.Size = new System.Drawing.Size(442, 416);
             this.info_gbox.TabIndex = 1;
@@ -144,7 +144,7 @@
             // 
             // AddressTextBox6
             // 
-            this.AddressTextBox6.Location = new System.Drawing.Point(87, 268);
+            this.AddressTextBox6.Location = new System.Drawing.Point(142, 309);
             this.AddressTextBox6.Name = "AddressTextBox6";
             this.AddressTextBox6.Size = new System.Drawing.Size(217, 20);
             this.AddressTextBox6.TabIndex = 11;
@@ -152,15 +152,15 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 271);
+            this.label6.Location = new System.Drawing.Point(34, 309);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Address";
+            this.label6.Text = "Endereço";
             // 
             // EmailtextBox5
             // 
-            this.EmailtextBox5.Location = new System.Drawing.Point(87, 216);
+            this.EmailtextBox5.Location = new System.Drawing.Point(142, 245);
             this.EmailtextBox5.Name = "EmailtextBox5";
             this.EmailtextBox5.Size = new System.Drawing.Size(217, 20);
             this.EmailtextBox5.TabIndex = 9;
@@ -168,7 +168,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 216);
+            this.label5.Location = new System.Drawing.Point(34, 245);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 8;
@@ -176,7 +176,7 @@
             // 
             // CNtextBox4
             // 
-            this.CNtextBox4.Location = new System.Drawing.Point(87, 150);
+            this.CNtextBox4.Location = new System.Drawing.Point(142, 186);
             this.CNtextBox4.Name = "CNtextBox4";
             this.CNtextBox4.Size = new System.Drawing.Size(217, 20);
             this.CNtextBox4.TabIndex = 7;
@@ -184,22 +184,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 153);
+            this.label4.Location = new System.Drawing.Point(32, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 13);
+            this.label4.Size = new System.Drawing.Size(100, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Cell number";
+            this.label4.Text = "Número de telefone";
             // 
             // FNtextBox2
             // 
-            this.FNtextBox2.Location = new System.Drawing.Point(87, 99);
+            this.FNtextBox2.Location = new System.Drawing.Point(142, 127);
             this.FNtextBox2.Name = "FNtextBox2";
             this.FNtextBox2.Size = new System.Drawing.Size(217, 20);
             this.FNtextBox2.TabIndex = 4;
             // 
             // IDtextBox1
             // 
-            this.IDtextBox1.Location = new System.Drawing.Point(87, 42);
+            this.IDtextBox1.Location = new System.Drawing.Point(142, 66);
             this.IDtextBox1.Name = "IDtextBox1";
             this.IDtextBox1.Size = new System.Drawing.Size(217, 20);
             this.IDtextBox1.TabIndex = 3;
@@ -207,16 +207,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 99);
+            this.label2.Location = new System.Drawing.Point(32, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(82, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Full Name";
+            this.label2.Text = "Nome Completo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 42);
+            this.label1.Location = new System.Drawing.Point(34, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 0;
@@ -227,9 +227,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(505, 536);
+            this.ClientSize = new System.Drawing.Size(525, 536);
             this.Controls.Add(this.info_gbox);
             this.Controls.Add(this.toolStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
             this.Name = "Registration_data";

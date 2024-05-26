@@ -66,8 +66,8 @@
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(156, 51);
-            this.toolStripButton1.Text = "Register Data";
+            this.toolStripButton1.Size = new System.Drawing.Size(225, 51);
+            this.toolStripButton1.Text = "Registro de informação";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
@@ -77,8 +77,8 @@
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(107, 51);
-            this.toolStripButton2.Text = "Search";
+            this.toolStripButton2.Size = new System.Drawing.Size(125, 51);
+            this.toolStripButton2.Text = "Procurar ";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
@@ -88,8 +88,8 @@
             this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(131, 51);
-            this.toolStripButton3.Text = "Calculator";
+            this.toolStripButton3.Size = new System.Drawing.Size(142, 51);
+            this.toolStripButton3.Text = "Calculadora";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton4
@@ -99,8 +99,8 @@
             this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(127, 51);
-            this.toolStripButton4.Text = "About Us";
+            this.toolStripButton4.Size = new System.Drawing.Size(130, 51);
+            this.toolStripButton4.Text = "Sobre nós";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // toolStripButton5
@@ -112,7 +112,7 @@
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(87, 51);
-            this.toolStripButton5.Text = "Exit";
+            this.toolStripButton5.Text = "Sair";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // toolStripSeparator1

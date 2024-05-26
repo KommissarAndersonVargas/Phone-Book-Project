@@ -40,11 +40,11 @@ namespace Phone_Book_Project
             }
             InitializeNameOfFilter();
             InitComboBoxOfDataFilter();
-            showingTheSize.Text = $"Size: {personinformation.Count()}";
+            showingTheSize.Text = $"Dados: {personinformation.Count()}";
         }
         public void InitializeNameOfFilter()
         {
-            selcao_de_ordenamento.Text = "Order by";
+            selcao_de_ordenamento.Text = "Ordenar por: ";
         }
         public void InitComboBoxOfDataFilter()
         {
@@ -72,11 +72,11 @@ namespace Phone_Book_Project
                 }
                 else if (coluna.DataPropertyName == "fullName")
                 {
-                    coluna.HeaderText = "Full name";
+                    coluna.HeaderText = "Nome Completo";
                 }
                 else if (coluna.DataPropertyName == "cellPhoneNumber")
                 {
-                    coluna.HeaderText = "Cell Phone Number";
+                    coluna.HeaderText = "Numero de telefone";
                 }
                 else if (coluna.DataPropertyName == "email")
                 {
@@ -84,11 +84,11 @@ namespace Phone_Book_Project
                 }
                 else if (coluna.DataPropertyName == "address")
                 {
-                    coluna.HeaderText = "Address";
+                    coluna.HeaderText = "Endereço";
                 }
                 else if (coluna.DataPropertyName == "Hora_da_entrada")
                 {
-                    coluna.HeaderText = "Arrived Time";
+                    coluna.HeaderText = "Dia de entrada";
                 }
             }
 
@@ -167,7 +167,7 @@ namespace Phone_Book_Project
         private void RemoveBotton_Click(object sender, EventArgs e)
         {
             RemoveSelectedItem();
-            showingTheSize.Text = $"Size: {personinformation.Count()}";
+            showingTheSize.Text = $"Dados: {personinformation.Count()}";
         }
         private void RemoveSelectedItem()
         {
@@ -246,41 +246,49 @@ namespace Phone_Book_Project
 
         public void OrderToDataGrid()
         {
-            if (selcao_de_ordenamento.Text == "Ordenar por CPF")
+            try
             {
-                var newOrnedData = PersonInformation.GetOrderByCpf(personinformation).ToList();
-                personinformation.Clear();
 
-                foreach (var person in newOrnedData)
+                if (selcao_de_ordenamento.Text == "Ordenar por CPF")
                 {
-                    personinformation.Add(person);
+                    var newOrnedData = PersonInformation.GetOrderByCpf(personinformation).ToList();
+                    personinformation.Clear();
+
+                    foreach (var person in newOrnedData)
+                    {
+                        personinformation.Add(person);
+                    }
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource = personinformation;
                 }
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = personinformation;
+                if (selcao_de_ordenamento.Text == "Ordenar por Endereço")
+                {
+                    var newOrnedData = PersonInformation.GetOrderByAddress(personinformation).ToList();
+                    personinformation.Clear();
+
+                    foreach (var person in newOrnedData)
+                    {
+                        personinformation.Add(person);
+                    }
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource = personinformation;
+                }
+                if (selcao_de_ordenamento.Text == "Ordenar por Nome")
+                {
+                    var newOrnedData = PersonInformation.GetOrderByName(personinformation).ToList();
+                    personinformation.Clear();
+
+                    foreach (var person in newOrnedData)
+                    {
+                        personinformation.Add(person);
+                    }
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource = personinformation;
+                }
             }
-            if (selcao_de_ordenamento.Text == "Ordenar por Endereço")
+            catch (Exception)
             {
-                var newOrnedData = PersonInformation.GetOrderByAddress(personinformation).ToList();
-                personinformation.Clear();
-
-                foreach (var person in newOrnedData)
-                {
-                    personinformation.Add(person);
-                }
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = personinformation;
-            }
-            if (selcao_de_ordenamento.Text == "Ordenar por Nome")
-            {
-                var newOrnedData = PersonInformation.GetOrderByName(personinformation).ToList();
-                personinformation.Clear();
-
-                foreach(var person in newOrnedData)
-                {
-                    personinformation.Add(person);
-                }
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = personinformation;
+                MessageBox.Show("Ocorreu um erro");
             }
         }
 

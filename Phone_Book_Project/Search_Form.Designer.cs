@@ -44,8 +44,8 @@
             this.selcao_de_ordenamento = new System.Windows.Forms.ToolStripComboBox();
             this.FilterBotton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.showingTheSize = new System.Windows.Forms.ToolStripLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -73,7 +73,7 @@
             this.groupBox1.Size = new System.Drawing.Size(697, 424);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Controller and Searcher Data";
+            this.groupBox1.Text = "Controle de dados";
             // 
             // selecao_de_procura
             // 
@@ -81,11 +81,11 @@
             this.selecao_de_procura.Items.AddRange(new object[] {
             "Nome",
             "CPF"});
-            this.selecao_de_procura.Location = new System.Drawing.Point(128, 339);
+            this.selecao_de_procura.Location = new System.Drawing.Point(149, 339);
             this.selecao_de_procura.Name = "selecao_de_procura";
-            this.selecao_de_procura.Size = new System.Drawing.Size(226, 25);
+            this.selecao_de_procura.Size = new System.Drawing.Size(205, 25);
             this.selecao_de_procura.TabIndex = 6;
-            this.selecao_de_procura.Text = "Select the search";
+            this.selecao_de_procura.Text = "Selecione a procura";
             // 
             // button1
             // 
@@ -94,7 +94,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(609, 34);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Search";
+            this.button1.Text = "Procurar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,9 +111,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(38, 339);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 19);
+            this.label1.Size = new System.Drawing.Size(105, 19);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Search for:";
+            this.label1.Text = "Procurar por:";
             // 
             // RemoveBotton
             // 
@@ -122,7 +122,7 @@
             this.RemoveBotton.Name = "RemoveBotton";
             this.RemoveBotton.Size = new System.Drawing.Size(609, 41);
             this.RemoveBotton.TabIndex = 2;
-            this.RemoveBotton.Text = "Remove Selection";
+            this.RemoveBotton.Text = "Remover Seleção\r\n";
             this.RemoveBotton.UseVisualStyleBackColor = true;
             this.RemoveBotton.Click += new System.EventHandler(this.RemoveBotton_Click);
             // 
@@ -140,7 +140,7 @@
             this.showingTheSize});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(721, 50);
+            this.toolStrip1.Size = new System.Drawing.Size(742, 50);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -151,8 +151,8 @@
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(165, 47);
-            this.toolStripButton1.Text = "Export to Excel";
+            this.toolStripButton1.Size = new System.Drawing.Size(195, 47);
+            this.toolStripButton1.Text = "Exportar para Excel";
             this.toolStripButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -168,8 +168,8 @@
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(156, 47);
-            this.toolStripButton2.Text = "Save Changes";
+            this.toolStripButton2.Size = new System.Drawing.Size(178, 47);
+            this.toolStripButton2.Text = "Salvar mudanças";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripSeparator2
@@ -189,8 +189,8 @@
             this.FilterBotton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.FilterBotton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.FilterBotton.Name = "FilterBotton";
-            this.FilterBotton.Size = new System.Drawing.Size(101, 47);
-            this.FilterBotton.Text = "Filter ";
+            this.FilterBotton.Size = new System.Drawing.Size(98, 47);
+            this.FilterBotton.Text = "Filtro";
             this.FilterBotton.Click += new System.EventHandler(this.FilterBotton_Click);
             // 
             // toolStripSeparator3
@@ -198,25 +198,26 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 50);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // showingTheSize
             // 
             this.showingTheSize.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showingTheSize.Name = "showingTheSize";
-            this.showingTheSize.Size = new System.Drawing.Size(40, 47);
-            this.showingTheSize.Text = "Size:";
+            this.showingTheSize.Size = new System.Drawing.Size(78, 47);
+            this.showingTheSize.Text = "Tamanho:";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Search_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(721, 506);
+            this.ClientSize = new System.Drawing.Size(742, 506);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
